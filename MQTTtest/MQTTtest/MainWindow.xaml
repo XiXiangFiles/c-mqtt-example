@@ -1,0 +1,23 @@
+﻿<Window x:Class="MQTTtest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MQTTtest"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Address" HorizontalAlignment="Left" Margin="101,66,0,0" VerticalAlignment="Top" Height="29" Width="57"/>
+        <TextBox x:Name="IP_t" HorizontalAlignment="Left" Height="26" Margin="258,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="128"/>
+        <Button x:Name="Connect_btn" Content="Connect" HorizontalAlignment="Left" Margin="578,69,0,0" VerticalAlignment="Top" Width="80" Height="22" Click="Connect_btn_Click"/>
+        <TextBox x:Name="topic_t" HorizontalAlignment="Left" Height="25" Margin="258,129,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="128"/>
+        <Button x:Name="subscribe_btn" Content="subscribe" HorizontalAlignment="Left" Margin="578,132,0,0" VerticalAlignment="Top" Width="80" Height="22" Click="subscribe_btn_Click"/>
+        <Label Content="Topic" HorizontalAlignment="Left" Margin="101,126,0,0" VerticalAlignment="Top" Height="28" Width="41"/>
+        <TextBox x:Name="megs" HorizontalAlignment="Left" Height="86" Margin="258,197,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="286"/>
+        <TextBox x:Name="mes_push" HorizontalAlignment="Left" Height="25" Margin="258,313,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="286"/>
+        <Button x:Name="publish_btn" Content="publlish" HorizontalAlignment="Left" Margin="578,322,0,0" VerticalAlignment="Top" Width="80" Height="22" Click="publish_btn_Click"/>
+        <Label Content="publish" HorizontalAlignment="Left" Margin="101,313,0,0" VerticalAlignment="Top" Height="28" Width="57"/>
+        <Label Content="message" HorizontalAlignment="Left" Margin="101,230,0,0" VerticalAlignment="Top" Height="28" Width="57"/>
+
+    </Grid>
+</Window>
